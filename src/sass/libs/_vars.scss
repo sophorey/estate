@@ -1,12 +1,11 @@
 :root {
-  // colors
-  // bg
+  // bg colors
   --color-bg: #ffffff;
   --color-invert-bg-style-1: #292c32;
   --color-invert-bg-style-2: #45525b;
   --color-invert-bg-style-3: #3a4443;
 
-  // fg
+  // fg colors
   --color-fg: #444444;
   --color-fg-style-1: #45525b;
   --color-fg-style-2: #3a4443;
@@ -17,9 +16,12 @@
   --color-invert-fg: #fafafc;
   --color-fg-accent-darken: #a8340d;
 
+  // border colors
+  --color-border: #caccd1;
+
   // fonts
   --family: "Popins", Helvetica, sans-serif;
 
   // duration
-  --transition: 0.5;
+  --transition: 0.5s;
 }

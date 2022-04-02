@@ -2,9 +2,18 @@
 
 .wrapper {
   width: 100%;
+  margin: 0 auto;
 
-  > * {
+  @include breakpoints.lg {
     max-width: 72rem;
-    margin: 0 auto;
+  }
+  @include breakpoints.md {
+    max-width: 72rem;
+  }
+  @include breakpoints.sm {
+    max-width: 72rem;
+  }
+  @include breakpoints.xs {
+    max-width: 72rem;
   }
 }

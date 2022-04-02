@@ -3,7 +3,7 @@
 .wrapper {
   width: 100%;
   margin: 0 auto;
-  max-width: 72rem; // 1151 px
+  max-width: 72rem; // 1151 px or 863 pt
 
   @include breakpoints.sm {
     max-width: 48rem;

@@ -3,24 +3,24 @@
 html,
 input {
   color: var(--color-fg-style-3);
-  font-size: 16pt;
+  font-size: 12pt;
   font-family: var(--family);
   line-height: 1.375;
 
   @include breakpoints.lg {
-    font-size: 14pt;
+    font-size: 11pt;
   }
 
   @include breakpoints.md {
-    font-size: 13pt;
+    font-size: 10pt;
   }
 
   @include breakpoints.sm {
-    font-size: 12pt;
+    font-size: 9pt;
   }
 
   @include breakpoints.xs {
-    font-size: 11pt;
+    font-size: 8pt;
   }
 }
 

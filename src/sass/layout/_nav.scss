@@ -1,29 +1,32 @@
 @use "../libs/breakpoints";
 
 #nav {
-  height: 4.125rem;
-  justify-content: space-between;
-  display: flex;
-  align-items: center;
-
-  .logo {
-    border: none;
-  }
-  ul.menu {
+  .grid {
+    padding: 1rem;
+    height: 4.125rem;
+    justify-content: space-between;
     display: flex;
-    li {
-      a {
-        padding: 1.562rem 0.93rem;
-        text-transform: capitalize;
-      }
-      &:last-child {
+    align-items: center;
+
+    .logo {
+      border: none;
+    }
+    ul.menu {
+      display: flex;
+      li {
         a {
-          padding-right: 0;
+          padding: 1.562rem 0.93rem;
+          text-transform: capitalize;
         }
-      }
-      &:first-child {
-        a {
-          padding-left: 0;
+        &:last-child {
+          a {
+            padding-right: 0;
+          }
+        }
+        &:first-child {
+          a {
+            padding-left: 0;
+          }
         }
       }
     }

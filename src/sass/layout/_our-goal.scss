@@ -1,3 +1,38 @@
+@use "../libs/breakpoints";
+
 #our-goal {
-  padding: 6.25rem auto;
+  padding: 6.25rem 0;
+
+  .grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    align-items: center;
+
+    @include breakpoints.sm {
+      grid-template-columns: 1fr;
+    }
+
+    h2 {
+      position: relative;
+      &:before {
+        content: "our goal";
+        text-transform: uppercase;
+        position: absolute;
+        top: -1rem;
+        left: 0;
+        color: var(--color-fg-accent);
+        font-size: 0.875rem;
+      }
+    }
+
+    p,
+    h2 {
+      letter-spacing: 0.025rem;
+    }
+    p {
+      margin-bottom: 0.5rem;
+    }
+  }
 }

@@ -1,0 +1,35 @@
+header {
+  p {
+    font-style: italic;
+  }
+
+  h1 + p {
+    font-size: 1.375rem;
+  }
+  h2 + p {
+    font-size: 1.25rem;
+  }
+  h3 + p {
+    font-size: 1.1rem;
+  }
+  h4 + p,
+  h5 + p,
+  h6 + p {
+    font-size: 0.9rem;
+  }
+
+  &.underlined {
+    p {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    p:after {
+      content: "";
+      margin-top: 2rem;
+      width: 8.125rem;
+      height: 2px;
+      background-color: var(--color-accent);
+    }
+  }
+}

@@ -1,0 +1,25 @@
+:root {
+  // colors
+  // bg
+  --color-bg: #ffffff;
+  --color-invert-bg-style-1: #292c32;
+  --color-invert-bg-style-2: #45525b;
+  --color-invert-bg-style-3: #3a4443;
+
+  // fg
+  --color-fg: #444444;
+  --color-fg-style-1: #45525b;
+  --color-fg-style-2: #3a4443;
+  --color-fg-style-3: #333333;
+  --color-fg-light: #6f7278;
+  --color-fg-accent: #ff8a63;
+  --color-fg-accent-dark: #52503b;
+  --color-invert-fg: #fafafc;
+  --color-fg-accent-darken: #a8340d;
+
+  // fonts
+  --family: "Popins", Helvetica, sans-serif;
+
+  // duration
+  --transition: 0.5;
+}

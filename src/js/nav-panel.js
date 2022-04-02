@@ -1,5 +1,7 @@
 const navPanelToggle = document.querySelector("#navPanelToggle");
 
-navPanelToggle.addEventListener("click", () => {
-  document.body.classList.toggle("is-nav-panel-visible");
-})
+function toggleNavPanelHandler() {
+  document.body.classList.toggle("is-navPanel-visible");
+}
+
+navPanelToggle.addEventListener("click", toggleNavPanelHandler);

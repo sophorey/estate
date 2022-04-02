@@ -1,0 +1,19 @@
+.hamburger {
+  width: 0.875rem;
+  height: 0.875rem;
+  stroke: inherit;
+
+  .hamburger__bar {
+    transform-origin: center;
+    transition: transform 0.3s;
+    stroke: inherit;
+    stroke-width: 10%;
+  }
+  .hamburger__bar--top {
+    transform: translateY(-40%);
+  }
+
+  .hamburger__bar--bot {
+    transform: translateY(40%);
+  }
+}

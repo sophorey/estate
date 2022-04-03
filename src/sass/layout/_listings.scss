@@ -1,0 +1,74 @@
+@use "./../libs/breakpoints";
+
+#listings {
+  padding: 6.25rem 0 6.25rem 0;
+  .grid {
+    padding: 1rem;
+
+    .listings__header {
+      max-width: 36.5rem;
+      h3.addition {
+        margin-bottom: 1rem;
+        &::before {
+          content: "Current listings";
+        }
+      }
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+
+    ul.listings__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr 1fr;
+      padding: 1.125rem 0;
+      grid-gap: 1rem;
+
+      @include breakpoints.md {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr 1fr 1fr;
+      }
+
+      @include breakpoints.xs {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+      }
+
+      li.listings__listing {
+        width: 100%;
+        .listings__listing-details {
+          text-align: center;
+          padding: 1.125rem 0;
+
+          .listings__category {
+            letter-spacing: 0.125rem;
+            text-transform: uppercase;
+            margin-bottom: 0.375rem;
+          }
+          h4 {
+            font-size: 1.25rem;
+            color: var(--color-fg-style-1);
+            margin-bottom: 0.375rem;
+          }
+          ul.listings__properties {
+            display: flex;
+            justify-content: space-around;
+
+            li.listings__properties-list {
+              display: flex;
+              align-items: center;
+              img {
+                margin-right: 0.375rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .listings__show-all-btn {
+      padding-top: 1.875rem;
+    }
+  }
+}

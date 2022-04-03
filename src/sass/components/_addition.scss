@@ -1,0 +1,14 @@
+.addition {
+  position: relative;
+
+  &:before {
+    content: "our goal";
+    text-transform: uppercase;
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    color: var(--color-fg-accent);
+    font-size: 0.875rem;
+    letter-spacing: 0.15rem;
+  }
+}

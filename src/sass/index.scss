@@ -5,16 +5,21 @@
 //base
 @use "base/reset";
 @use "base/typography";
+@use "base/grid";
 
 // components {
 @use "components/icon";
 @use "components/worker";
 @use "components/hamburger";
+@use "components/addition";
+@use "components/image";
 
 // layout
 @use "layout/wrapper";
 @use "layout/nav";
 @use "layout/welcome";
 @use "layout/our-goal";
+@use "layout/requirements";
+@use "layout/listings";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

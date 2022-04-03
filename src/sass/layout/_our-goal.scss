@@ -15,19 +15,6 @@
       grid-gap: 2rem;
     }
 
-    h2 {
-      position: relative;
-      &:before {
-        content: "our goal";
-        text-transform: uppercase;
-        position: absolute;
-        top: -1rem;
-        left: 0;
-        color: var(--color-fg-accent);
-        font-size: 0.875rem;
-      }
-    }
-
     p,
     h2 {
       letter-spacing: 0.025rem;

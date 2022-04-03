@@ -1,7 +1,76 @@
+@use "./../libs/breakpoints";
+
 #requirements {
   padding: 6.25rem 0;
+
   .grid {
     display: flex;
     flex-direction: column;
+    align-items: center;
+
+    // header
+    .requirements__header {
+      text-align: center;
+      max-width: 42rem;
+
+      h3.addition {
+        padding-bottom: 1.6rem;
+
+        &::before {
+          left: 50%;
+          transform: translateX(-50%);
+          content: "our requirements";
+        }
+      }
+      p {
+        padding-bottom: 1.6rem;
+      }
+    }
+
+    // preview
+    .requirements__preview {
+      display: flex;
+      max-width: 32rem;
+      justify-content: center;
+      align-items: center;
+      .image {
+        margin-right: 3.3rem;
+        margin-bottom: 0.75rem;
+        height: 100%;
+        img {
+          height: 100%;
+          width: auto;
+        }
+      }
+      ul {
+        li {
+          img {
+            height: 3rem;
+            width: 3rem;
+          }
+          width: 12.5rem;
+          margin-bottom: 4.6875rem;
+          h4 {
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            color: var(--color-fg-style-1);
+          }
+          p {
+            color: var(--color-fg-light);
+          }
+        }
+      }
+
+      @include breakpoints.md {
+        flex-direction: column;
+        ul {
+          display: flex;
+          li {
+            margin-right: 1rem;
+          }
+        }
+      }
+    }
   }
 }

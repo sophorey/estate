@@ -1,0 +1,54 @@
+@use "./../libs/breakpoints";
+
+#newsroom {
+  padding: 6.25rem 0;
+
+  .grid {
+    padding: 1rem;
+
+    h3 {
+      margin-bottom: 1.25rem;
+    }
+    .newsroom__list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+
+      @include breakpoints.md {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      @include breakpoints.sm {
+        grid-template-columns: 1fr;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .newsroom__header {
+        padding: 1.875rem;
+
+        h4.addition {
+          &:before {
+            top: -1.3rem;
+          }
+        }
+        p {
+          color: var(--color-fg-light);
+          margin-top: 1.25rem;
+        }
+      }
+    }
+    .our-team__arrow-btn {
+      padding-top: 1.25rem;
+      display: flex;
+      justify-content: center;
+      a {
+        i {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+  }
+}

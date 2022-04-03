@@ -1,0 +1,51 @@
+@use "./../libs/breakpoints";
+
+#our-team {
+  padding: 6.25rem 0;
+  .grid {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+
+    @include breakpoints.sm {
+      display: flex;
+      flex-wrap: wrap;
+      grid-gap: 1rem;
+    }
+
+    .our-team__header {
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        margin-bottom: 1rem;
+      }
+      h3::before {
+        content: "our people";
+      }
+      p {
+        font-size: 1.0625rem;
+        margin-bottom: 2rem;
+        color: var(--color-fg-light);
+      }
+
+      .our-team__arrow-btn {
+        margin-top: auto;
+        i {
+          margin-left: 0.5rem;
+        }
+      }
+    }
+
+    .our-team__team-worker-col {
+      li {
+        margin-bottom: 1rem;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

@@ -1,13 +1,18 @@
 .worker {
   display: flex;
   align-items: center;
+  grid-gap: 1rem;
+  img {
+    width: 4.93rem;
+    height: 4.93rem;
+    border-radius: 50%;
+    border: solid 2pt var(--color-border);
+  }
 
-  .worker {
-    img {
-      width: 4.93rem;
-      height: 4.93rem;
-      border-radius: 50%;
-      border: solid 2pt var(--color-border);
+  .caption {
+    p {
+      color: var(--color-fg-light);
+      letter-spacing: 0.125rem !important;
     }
   }
 }

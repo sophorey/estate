@@ -15,6 +15,11 @@
       position: relative;
       .testimonials__header {
         margin-bottom: 0.75rem;
+        .addition {
+          &::before {
+            content: "Testimonials";
+          }
+        }
       }
       .testimonials__list {
         margin-bottom: 1.25rem;

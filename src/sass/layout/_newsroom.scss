@@ -7,7 +7,13 @@
     padding: 1rem;
 
     h3 {
+      text-align: center;
       margin-bottom: 1.25rem;
+      &.addition::before {
+        content: "Newsroom";
+        left: 50%;
+        transform: translateX(-50%);
+      }
     }
     .newsroom__list {
       display: grid;

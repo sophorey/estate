@@ -28,12 +28,13 @@
       }
     }
   }
-  .icon.button {
+  .icon.btn {
     position: relative;
-    bottom: 6.75rem;
+    bottom: 8.75rem;
     left: 50%;
     transform: translateX(-50%);
     z-index: 3;
+    background-color: transparent;
 
     &::before {
       width: 3.75rem;
@@ -42,9 +43,6 @@
       border-radius: 100%;
       line-height: 3.75rem;
       display: inline-block;
-    }
-    &:hover {
-      border-color: var(--color-fg-accent);
     }
   }
   .bg {

@@ -35,7 +35,7 @@
       @include breakpoints.md {
         align-items: none;
         .image {
-          margin-right: 0;
+          margin-right: 0 !important;
           margin-bottom: 0.75rem;
           height: 100%;
         }
@@ -70,6 +70,7 @@
         flex-direction: column;
         ul {
           display: flex;
+          flex-direction: column;
           li {
             margin-right: 1rem;
           }

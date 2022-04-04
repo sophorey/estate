@@ -4,4 +4,18 @@ a.icon {
   transition: border var(--transition) ease, color var(--transition) ease;
   border-radius: 50%;
   border: solid var(--color-fg-style-3) 2pt;
+  &.btn {
+    padding: 0.875rem;
+    background-color: var(--color-bg);
+    color: var(--color-fg-style-1);
+    outline: none;
+    cursor: pointer;
+    transition: color 0.5s ease, border 0.5s ease;
+
+    &:hover {
+      transition: color 0.5s ease, border 0.5s ease;
+      color: var(--color-fg-accent);
+      border-color: var(--color-fg-accent);
+    }
+  }
 }

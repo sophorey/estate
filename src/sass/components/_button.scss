@@ -1,7 +1,8 @@
 button,
 .button,
 input[type="button"],
-input[type="submit"] {
+input[type="submit"],
+input[type="email"] {
   padding: 0.875rem;
   border-radius: 6%;
   background-color: var(--color-bg);

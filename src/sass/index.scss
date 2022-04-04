@@ -6,6 +6,7 @@
 @use "base/reset";
 @use "base/typography";
 @use "base/grid";
+@use "base/page";
 
 // components {
 @use "components/icon";
@@ -13,6 +14,7 @@
 @use "components/hamburger";
 @use "components/addition";
 @use "components/image";
+@use "components/button";
 
 // layout
 @use "layout/wrapper";
@@ -24,5 +26,6 @@
 @use "layout/our-team";
 @use "layout/newsroom";
 @use "layout/testimonials";
+@use "layout/contact";
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");

@@ -1,0 +1,26 @@
+#contact {
+  padding: 6.25rem;
+  background-color: var(--color-invert-bg-style-2);
+  color: var(--color-invert-fg-white);
+  .wrapper {
+    max-width: 35.3125rem;
+    .grid {
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      h3 {
+        margin-bottom: 0.75rem;
+      }
+      p {
+        color: var(--color-invert-fg);
+        margin-bottom: 1.25rem;
+      }
+      fieldset {
+        display: flex;
+        grid-gap: 1.25rem;
+      }
+    }
+  }
+}

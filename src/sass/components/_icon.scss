@@ -2,9 +2,6 @@ a.icon {
   border-bottom: none;
   font-size: 1.25rem;
   transition: border var(--transition) ease, color var(--transition) ease;
-  &.button {
-    border-radius: 50%;
-    border: solid var(--color-fg-style-3) 2pt;
-    transition: border var(--transition) ease, color var(--transition) ease;
-  }
+  border-radius: 50%;
+  border: solid var(--color-fg-style-3) 2pt;
 }

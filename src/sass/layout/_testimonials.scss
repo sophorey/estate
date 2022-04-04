@@ -1,9 +1,14 @@
+@use "./../libs/breakpoints";
+
 #testimonials {
   padding: 6.25rem 0;
 
   .wrapper {
-    margin: 0 0 0 auto !important;
+    margin: 0 auto !important;
     max-width: 96rem;
+    @include breakpoints.lg {
+      margin: 0 0 0 auto !important;
+    }
 
     .grid {
       padding: 1rem;
